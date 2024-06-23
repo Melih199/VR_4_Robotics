@@ -126,6 +126,7 @@ set(CXX_EXP_LIB "-fmax-errors=10 -Wnoexcept -Wstrict-null-sentinel")
 ./setup.sh
 ./build.sh
 ```
+If you have an error releated with clang version you can try 8 or 12 instead of 10
 
 
 
