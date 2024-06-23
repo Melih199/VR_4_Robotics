@@ -52,7 +52,7 @@ and accurate path following along predefined routes. This ensures that the ambul
 through the drivable parts of the terrain before deploying the drone for the final leg of the journey.
 
 
-## Instalation of The Tools on Ubuntu 20.04
+## Installation of The Tools on Ubuntu 20.04
 
 ### Unreal Engine 5.2.0 installation
 
@@ -145,6 +145,8 @@ cd PX4-Autopilot/Tools/setup
 make px4_sitl none_iris
 ```
 if you had an error run `python3 -m pip install empy==3.3.4` this command and repeat previous step.
+
+
 
 
 
