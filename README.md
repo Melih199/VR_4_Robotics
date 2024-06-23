@@ -20,15 +20,15 @@ Unreal Engine 5 is utilized for creating a detailed and realistic simulation env
 provides high-fidelity graphics, advanced physics simulation, and extensive support for virtual reality (VR) and
 mixed reality (MR) applications.
 
-### Cesium v2.5 with Google Maps API
-The accurate representation of the Genova map within the simulation is achieved using Google API and Ce-
-sium. Google API provides real-time data and mapping services, while Cesium offers detailed 3D geospatial
-visualization.
-
 ### Airsim(Colosseum)
 Airsim, developed by Microsoft, is an open-source simulator for drones and ground vehicles. It is used to
 simulate the physical and sensor dynamics of the drone for the project. Colosseum is forked from Airsim, a
 simulator for robotic, autonomous systems, built on Unreal Engine5+.
+
+### Cesium v2.5 with Google Maps API
+The accurate representation of the Genova map within the simulation is achieved using Google API and Ce-
+sium. Google API provides real-time data and mapping services, while Cesium offers detailed 3D geospatial
+visualization.
 
 ### MAVLink
 MAVLink, short for Micro Air Vehicle Link, is a lightweight communication protocol designed for exchanging
