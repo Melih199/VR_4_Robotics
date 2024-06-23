@@ -85,5 +85,5 @@ make j10
 ./GenerateProjectFiles.sh
 make
 ```
-If you have an error while running `./Setup.sh run it with `sudo
+If you have an error while running `./Setup.sh` run it with `sudo`
 
