@@ -74,7 +74,7 @@ go to line 581 and change it with
 ```cpp
 Arguments += " -Progress";
 ```
--You may skeep this step. To speed up the next commands you may increase the processor cores to do that first check your number of processor cores, keep few of them and use the rest ( in our case it is 12 )
+- You may skeep this step. To speed up the next commands you may increase the processor cores to do that first check your number of processor cores, keep few of them and use the rest ( in our case it is 12 )
 ```sh 
 nproc
 make j10
@@ -103,14 +103,14 @@ git clone https://github.com/CodexLabsLLC/Colosseum.git
 ```sh
 sudo apt-get install -y clang-10 clang++-10 libc++-10-dev libc++abi-10-dev
 ```
-Open the build.sh file and change line 67,68,70,71 respectively with following:
+- Open the build.sh file and change line 67,68,70,71 respectively with following:
 ```sh
 export CC="gcc-10"
 export CXX="g++-10"
 export CC="clang-10"
 export CXX="clang++-10"
 ```
-After go to Colosseum/cmake/cmake-modules then open CommonSetup.cmake and change the lines 62 and 64 respectively with the following:
+- After go to Colosseum/cmake/cmake-modules then open CommonSetup.cmake and change the lines 62 and 64 respectively with the following:
 
 ```sh
 set(CXX_EXP_LIB "-L${LLVM_LIBRARY_DIRS} -ferror-limit=10")
