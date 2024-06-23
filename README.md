@@ -52,9 +52,9 @@ and accurate path following along predefined routes. This ensures that the ambul
 through the drivable parts of the terrain before deploying the drone for the final leg of the journey.
 
 
-## Instalations on Ubuntu 20.04
+## Instalation of The Tools on Ubuntu 20.04
 
-### Unreal Engine 5.2.0
+### Unreal Engine 5.2.0 installation
 
 - Follow the 6 steps provided **Accessing Unreal Engine Source Code on GitHub** [Unreal Engine 5.2.0](https://dev.epicgames.com/documentation/en-us/unreal-engine/downloading-unreal-engine-source-code)
 
@@ -93,7 +93,7 @@ cd UnrealEngine-5.2.0-release/Engine/Binaries/Linux
 ./UnrealEditor
 ```
 
-### Coleseum
+### Colesseum installation
 - Clone the Colesseum repository
 ```sh
 cd VR
@@ -129,6 +129,11 @@ set(CXX_EXP_LIB "-fmax-errors=10 -Wnoexcept -Wstrict-null-sentinel")
 If you have an error releated with clang version you can try 8 or 12 instead of 10
 
 
+## PX4 installation
+- Clone the PX4 repository
+```sh
+git clone --recursive --branch release/1.14 https://github.com/PX4/PX4-Autopilot.git
+```
 
 
 
