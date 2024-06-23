@@ -93,4 +93,42 @@ cd UnrealEngine-5.2.0-release/Engine/Binaries/Linux
 ./UnrealEditor
 ```
 
+### Coleseum
+- Clone the Colesseum repository
+```sh
+cd VR
+git clone https://github.com/CodexLabsLLC/Colosseum.git
+```
+- We need to make same changes before installation, first open the setup.sh and change line 63 with:
+```sh
+sudo apt-get install -y clang-10 clang++-10 libc++-10-dev libc++abi-10-dev
+```
+Open the build.sh file and change line 67,68,70,71 respectively with following:
+```sh
+export CC="gcc-10"
+export CXX="g++-10"
+export CC="clang-10"
+export CXX="clang++-10"
+```
+After go to Colosseum/cmake/cmake-modules then open CommonSetup.cmake and change the lines 62 and 64 respectively with the following:
+
+```sh
+set(CXX_EXP_LIB "-L${LLVM_LIBRARY_DIRS} -ferror-limit=10")
+set(CXX_EXP_LIB "-fmax-errors=10 -Wnoexcept -Wstrict-null-sentinel")
+```
+- Go to Colosseum/ros2/src/airsim_ros_pkgs then open CMakeLists.txt and change line 37 with:
+```sh
+-fmax-errors=10
+```
+
+- Now we can build it
+```sh
+./setup.sh
+./build.sh
+```
+
+
+
+
+
 
