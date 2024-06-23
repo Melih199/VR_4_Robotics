@@ -58,7 +58,8 @@ through the drivable parts of the terrain before deploying the drone for the fin
 
 - Follow the 6 steps provided **Accessing Unreal Engine Source Code on GitHub** [Unreal Engine 5.2.0](https://dev.epicgames.com/documentation/en-us/unreal-engine/downloading-unreal-engine-source-code)
 
-- ```sh 
+- If your internet connection is not good please install th zip file of UE5.2
+```sh 
 mkdir VR
 cd VR
 git clone https://github.com/EpicGames/UnrealEngine.git
