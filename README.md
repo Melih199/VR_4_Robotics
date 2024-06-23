@@ -4,7 +4,10 @@ This project is developed by:
 2. *Mustafa Melih Toslak - s5431021*
 3. *Natnael Berhanu Takele - s5446838*
 
-## Aim of the project
+## Note: 
+This project developed and tested computer with RTX 2060 graphic card  and on ubuntu 20.04. With few more changes it is possible to run it on ubuntu 22.04 this will be disscussed at the and of this report. 
+
+## Aim of The Project
 This project aims to simulate an emergency medical response scenario in the challenging terrain of Righi,
 located in Genoa, Italy. The scenario involves a smart ambulance equipped with a drone, designed to deliver
 life-saving medicines to a patient in an inaccessible area. The simulation will be developed using Unreal
@@ -49,6 +52,10 @@ and accurate path following along predefined routes. This ensures that the ambul
 through the drivable parts of the terrain before deploying the drone for the final leg of the journey.
 
 
+## Instalations on Ubuntu 20.04
 
+### Unreal Engine 5.2.0
 
+1- Follow the 6 steps provided **Accessing Unreal Engine Source Code on GitHub** [Unreal Engine 5.2.0](https://dev.epicgames.com/documentation/en-us/unreal-engine/downloading-unreal-engine-source-code)
+2- 
 
