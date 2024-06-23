@@ -74,4 +74,16 @@ go to line 581 and change it with
 ```cpp
 Arguments += " -Progress";
 ```
--sad
+-You may skeep this step. To speed up the next commands you may increase the processor cores to do that first check your number of processor cores, keep few of them and use the rest ( in our case it is 12 )
+```sh 
+nproc
+make j10
+```
+- Navigate the UnrealEngine-5.2.0-release folder and rund the following commands.
+```sh 
+./Setup.sh
+./GenerateProjectFiles.sh
+make
+```
+If you have an error while running `./Setup.sh run it with `sudo
+
