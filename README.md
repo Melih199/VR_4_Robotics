@@ -70,7 +70,7 @@ git checkout 5.2
 cd UnrealEngine-5.2.0-release/Engine/Source/Developer/DesktopPlatform/Private
 gedit DesktopPlatformBase
 ```
-go to line 581 and change it with
+- go to line 581 and change it with
 ```cpp
 Arguments += " -Progress";
 ```
