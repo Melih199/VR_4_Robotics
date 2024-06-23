@@ -132,9 +132,19 @@ If you have an error releated with clang version you can try 8 or 12 instead of 
 ## PX4 installation
 - Clone the PX4 repository
 ```sh
+cd VR
 git clone --recursive --branch release/1.14 https://github.com/PX4/PX4-Autopilot.git
 ```
-
+- Then install the dependencies with following commands:
+```sh
+cd PX4-Autopilot/Tools/setup
+./ubuntu.sh
+```
+- restart your computer and run the following command:
+```sh
+make px4_sitl none_iris
+```
+if you had an error run `python3 -m pip install empy==3.3.4` this command and repeat previous step.
 
 
 
