@@ -87,3 +87,10 @@ make
 ```
 If you have an error while running `./Setup.sh` run it with `sudo`
 
+- Now you should be able to run UE5.2
+```sh
+cd UnrealEngine-5.2.0-release/Engine/Binaries/Linux
+./UnrealEditor
+```
+
+
