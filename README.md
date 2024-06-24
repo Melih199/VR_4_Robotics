@@ -68,7 +68,7 @@ cd VR
 git clone https://github.com/EpicGames/UnrealEngine.git
 git checkout 5.2
 ```
-- We need to make some changes before intallation
+- We need to make some changes before installation
 ```sh 
 cd UnrealEngine-5.2.0-release/Engine/Source/Developer/DesktopPlatform/Private
 gedit DesktopPlatformBase
@@ -77,12 +77,12 @@ gedit DesktopPlatformBase
 ```cpp
 Arguments += " -Progress";
 ```
-- You may skeep this step. To speed up the next commands you may increase the processor cores to do that first check your number of processor cores, keep few of them and use the rest ( in our case it is 12 )
+- You may skip this step. To speed up the next commands you may increase the processor cores to do that first check your number of processor cores, keep a few of them, and use the rest ( in our case it is 12 )
 ```sh 
 nproc
 make j10
 ```
-- Navigate the UnrealEngine-5.2.0-release folder and rund the following commands.
+- Navigate the UnrealEngine-5.2.0-release folder and run the following commands.
 ```sh 
 ./Setup.sh
 ./GenerateProjectFiles.sh
@@ -102,18 +102,18 @@ cd UnrealEngine-5.2.0-release/Engine/Binaries/Linux
 cd VR
 git clone https://github.com/CodexLabsLLC/Colosseum.git
 ```
-- We need to make same changes before installation, first open the setup.sh and change line 63 with:
+- We need to make some changes before installation, first open the setup.sh and change line 63 with:
 ```sh
 sudo apt-get install -y clang-10 clang++-10 libc++-10-dev libc++abi-10-dev
 ```
-- Open the build.sh file and change line 67,68,70,71 respectively with following:
+- Open the build.sh file and change lines 67,68,70,71 respectively with the following:
 ```sh
 export CC="gcc-10"
 export CXX="g++-10"
 export CC="clang-10"
 export CXX="clang++-10"
 ```
-- After go to Colosseum/cmake/cmake-modules then open CommonSetup.cmake and change the lines 62 and 64 respectively with the following:
+- After going to Colosseum/cmake/cmake-modules then open CommonSetup.cmake and change the lines 62 and 64 respectively with the following:
 
 ```sh
 set(CXX_EXP_LIB "-L${LLVM_LIBRARY_DIRS} -ferror-limit=10")
@@ -129,7 +129,7 @@ set(CXX_EXP_LIB "-fmax-errors=10 -Wnoexcept -Wstrict-null-sentinel")
 ./setup.sh
 ./build.sh
 ```
-If you have an error releated with clang version you can try 8 or 12 instead of 10
+If you have an error related with clang version you can try 8 or 12 instead of 10
 
 
 ## PX4 installation
@@ -138,7 +138,7 @@ If you have an error releated with clang version you can try 8 or 12 instead of 
 cd VR
 git clone --recursive --branch release/1.14 https://github.com/PX4/PX4-Autopilot.git
 ```
-- Then install the dependencies with following commands:
+- Then install the dependencies with the following commands:
 ```sh
 cd PX4-Autopilot/Tools/setup
 ./ubuntu.sh
@@ -147,7 +147,7 @@ cd PX4-Autopilot/Tools/setup
 ```sh
 make px4_sitl none_iris
 ```
-if you had an error run `python3 -m pip install empy==3.3.4` this command and repeat previous step.
+if you have an error run `python3 -m pip install empy==3.3.4` this command and repeat the previous step.
 
 ### QGroundControl Installation
 
@@ -168,22 +168,22 @@ chmod +x ./QGroundControl.AppImage
 ### Cesium with Google Maps API Installation
 - Go to this link and install the [Cesium v2.5](https://github.com/CesiumGS/cesium-unreal/releases/download/v2.5.0/CesiumForUnreal-52-v2.5.0.zip) 
 
-### MAVLink, D-Flight and Spline Installation.
-- MAVlink will be aoutomatically installed during the PX4 installation
-- D-Flight there is no installation of the D-flight for our project we will just open the D-Flight App and take take the necessary informations manually.
+### MAVLink, D-Flight, and Spline Installation.
+- MAVlink will be automatically installed during the PX4 installation
+- D-Flight there is no installation of the D-flight for our project we will just open the D-Flight App and take the necessary information manually.
 - Spline is a Unreal Engine tool
 
 ## Integrations of The Tools
 
 ### Unreal Engine 5.2.0, Cesium with Google Maps API and Colesseum
 - It is better to use Blocks environment created by Colesseum (Colesseum will be already integrated)
-- Run the Unreal Engine and oppen the Colosseum/Unreal/Environments/Blocks/Blocks.uproject in Unreal Engine.
+- Run the Unreal Engine and open the Colosseum/Unreal/Environments/Blocks/Blocks.uproject in Unreal Engine.
 - Delete everything in the project except PlayerStart and close it.
-- Go to CesiumForUnreal-52-v2.5.0 folder and coppy the CesiumForUnreal folder
-- Paste it to the Colosseum/Unreal/Environments/Blocks/Plugins, also you should see the Airsim pluging.
-- Run the Unreal Engine and oppen the Colosseum/Unreal/Environments/Blocks/Blocks.uproject in Unreal Engine.
+- Go to CesiumForUnreal-52-v2.5.0 folder and copy the CesiumForUnreal folder
+- Paste it to the Colosseum/Unreal/Environments/Blocks/Plugins, also you should see the Airsim plugin.
+- Run the Unreal Engine and open the Colosseum/Unreal/Environments/Blocks/Blocks.uproject in Unreal Engine.
 - Please follow the [tutorials](https://cesium.com/learn/unreal/unreal-quickstart/) provided from cesium and watch this [youtube tutorial](https://www.youtube.com/watch?v=TbHCvAo-aGg) to oppen a Google Maps account and connect it.
-- For the GeoReference Origin please use the followings for now:
+- For the GeoReference Origin please use the following for now:
 ```sh
 Latitude: 44.4364209
 Longitude: 8.9320742
@@ -194,10 +194,10 @@ Longitude: 8.9320742
 </p>
 
 ### Colesseum, PX4 and QGrounControl
-- Navigate to your Documents/Airsim folder and oppen the settings.json file.
+- Navigate to your Documents/Airsim folder and open the settings.json file.
 - Change this file with provided [settings.json](./settings.json) file in this repository.
-- The changes in this file allow us to connect Colesseum, PX4 and QGControl via MAVlink.
-- Alse settings.json file has necessary sensors for drone, we will use them to create navigation algorithms.
+- The changes in this file allow us to connect Colesseum, PX4, and QGControl via MAVlink.
+- Also settings.json file has the necessary sensors for drone, we will use them to create navigation algorithms.
 
 <p float="left">
   <img src="Resources/qgc_1.png" width="400" height="350" />
@@ -206,18 +206,18 @@ Longitude: 8.9320742
 
 ### ROS, D-Flight and Colesseum
 - To mimic the D-Flight app we created the simple Ros node [d-flight.py](./d-flight.py)
-- Coppy this node and place it to Colosseum/ros/src/airsim_tutorial_pkgs/scripts folder
+- Copy this node and place it in Colosseum/ros/src/airsim_tutorial_pkgs/scripts folder
 - Then navigate to ros folder and build it:
 ```sh
 catkin build; # or catkin_make
 source devel/setup.bash
 ```
-- If we lanch and run following commands, this will integrate ROS, D-Flight and Colesseum:
+- If we launch and run the following commands, this will integrate ROS, D-Flight, and Colesseum:
 ```sh
 roslaunch airsim_ros_pkgs airsim_node.launch
 rosrun airsim_tutorial_pkgs d-flight.py
 ```
-To viualize the sensors you may wanna run rviz
+To visualize the sensors you may wanna run rviz
 
 <p float="left">
   <img src="Resources/D-Flight.jpg" width="400" height="350" />
@@ -225,7 +225,7 @@ To viualize the sensors you may wanna run rviz
 </p>
 
 ## How to Use Bug2 Algorithm to Avoid Obstacles
-The UAV, or drone, is controlled using a combination of PX4 flight control software and QGroundControl. This enables operators to efficiently plan and manage drone missions. However, QGroundControl lacks obstacle avoidance functionality. To address this limitation, we combined QGroundControl with [Bug2](./bug2.py) algorithm to handle such situations. To detect objects in the environment, we employed four different distance sensors positioned at 0 degrees, 90 degrees, 180 degrees, and 360 degrees. We used a preferred direction to compute the Bug2 algorithm, which is implemented by selecting the optimal direction that avoids collisions within the preferred path. These sensor can be find in the settings.json file.
+The UAV, or drone, is controlled using a combination of PX4 flight control software and QGroundControl. This enables operators to efficiently plan and manage drone missions. However, QGroundControl lacks obstacle avoidance functionality. To address this limitation, we combined QGroundControl with [Bug2](./bug2.py) algorithm to handle such situations. To detect objects in the environment, we employed four different distance sensors positioned at 0 degrees, 90 degrees, 180 degrees, and 360 degrees. We used a preferred direction to compute the Bug2 algorithm, which is implemented by selecting the optimal direction that avoids collisions within the preferred path. This sensor can be found in the settings.json file.
 
 - To run this file before command these:
 ```sh
@@ -254,8 +254,8 @@ make px4_sitl none_iris
 ```sh
 ./QGroundControl.AppImage
 ```
-- Create Mission in QGroundControl app
-- Run the simulation and you need to wait little bit
+- Create a Mission in the QGroundControl app
+- Run the simulation and you need to wait a little bit
 - Run bug2 algorithm
 ```sh
 python //or pyhon3 bug2.py
@@ -266,10 +266,10 @@ roslaunch airsim_ros_pkgs airsim_node.launch
 rosrun airsim_tutorial_pkgs d-flight.py
 rviz
 ```
-- Open the QGroundControl agin, upload the plan file to the drone and start the mission.
+- Open the QGroundControl again, upload the plan file to the drone, and start the mission.
 
 - WELL DONE!!
-- You can watch the video of the project below.
+- You can watch the video of our project below.
 [![Project video](https://github.com/Melih199/VR_4_Robotics/assets/58879182/5b2c95f0-ff8e-4a8a-8dcd-cfb5abb3b263)](https://www.youtube.com/watch?v=VRSgiM8ewTc)
 
 
