@@ -214,6 +214,11 @@ rosrun airsim_tutorial_pkgs d-flight.py
 ```
 To viualize the sensors you may wanna run rviz
 
+<p float="left">
+  <img src="Resources/D-Flight.png" width="450" height="350" />
+  <img src="Resources/Dflight_areas.png" width="450" height="350" /> 
+</p>
+
 ## How to Use Bug2 Algorithm to Avoid Obstacles
 The UAV, or drone, is controlled using a combination of PX4 flight control software and QGroundControl. This enables operators to efficiently plan and manage drone missions. However, QGroundControl lacks obstacle avoidance functionality. To address this limitation, we combined QGroundControl with [Bug2](./bug2.py) algorithm to handle such situations. To detect objects in the environment, we employed four different distance sensors positioned at 0 degrees, 90 degrees, 180 degrees, and 360 degrees. We used a preferred direction to compute the Bug2 algorithm, which is implemented by selecting the optimal direction that avoids collisions within the preferred path. These sensor can be find in the settings.json file.
 
