@@ -188,6 +188,10 @@ chmod +x ./QGroundControl.AppImage
 Latitude: 44.4364209
 Longitude: 8.9320742
 ```
+<p float="left">
+  <img src="Resources/cesium_1" width="200" />
+  <img src="Resources/cesium_3" width="200" /> 
+</p>
 
 ### Colesseum, PX4 and QGrounControl
 - Navigate to your Documents/Airsim folder and oppen the settings.json file.
