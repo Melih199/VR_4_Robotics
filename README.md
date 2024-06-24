@@ -199,6 +199,11 @@ Longitude: 8.9320742
 - The changes in this file allow us to connect Colesseum, PX4 and QGControl via MAVlink.
 - Alse settings.json file has necessary sensors for drone, we will use them to create navigation algorithms.
 
+<p float="left">
+  <img src="Resources/qgc_1.png" width="400" height="350" />
+  <img src="Resources/drone_control_4.png" width="400" height="350" /> 
+</p>
+
 ### ROS, D-Flight and Colesseum
 - To mimic the D-Flight app we created the simple Ros node [d-flight.py](./d-flight.py)
 - Coppy this node and place it to Colosseum/ros/src/airsim_tutorial_pkgs/scripts folder
