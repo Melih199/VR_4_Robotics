@@ -254,7 +254,7 @@ rviz
 
 - WELL DONE!!
 
-[![Project video]()](https://www.youtube.com/watch?v=VRSgiM8ewTc)
+[![Project video](https://github.com/Melih199/VR_4_Robotics/assets/58879182/5b2c95f0-ff8e-4a8a-8dcd-cfb5abb3b263)](https://www.youtube.com/watch?v=VRSgiM8ewTc)
 
 
 
