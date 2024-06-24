@@ -215,8 +215,8 @@ rosrun airsim_tutorial_pkgs d-flight.py
 To viualize the sensors you may wanna run rviz
 
 <p float="left">
-  <img src="Resources/D-Flight.png" width="450" height="350" />
-  <img src="Resources/Dflight_areas.jpg" width="450" height="350" /> 
+  <img src="Resources/D-Flight.jpg" width="450" height="350" />
+  <img src="Resources/Dflight_areas.png" width="450" height="350" /> 
 </p>
 
 ## How to Use Bug2 Algorithm to Avoid Obstacles
