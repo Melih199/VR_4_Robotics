@@ -5,7 +5,8 @@ This project is developed by:
 3. *Natnael Berhanu Takele - s5446838*
 
 ## Note: 
-This project developed and tested computer with RTX 2060 graphic card  and on ubuntu 20.04. With few more changes it is possible to run it on ubuntu 22.04 this will be disscussed at the and of this report. 
+- This project developed and tested computer with RTX 2060 graphic card and on ubuntu 20.04. With few more changes it is possible to run it on ubuntu 22.04 this will be disscussed at the and of this report. 
+- ROS Noetic
 
 ## Aim of The Project
 This project aims to simulate an emergency medical response scenario in the challenging terrain of Righi,
@@ -145,6 +146,42 @@ cd PX4-Autopilot/Tools/setup
 make px4_sitl none_iris
 ```
 if you had an error run `python3 -m pip install empy==3.3.4` this command and repeat previous step.
+
+### QGroundControl Installation
+
+- Before installing QGroundControl for the first time, run these commands:
+```sh
+sudo usermod -a -G dialout $USER
+sudo apt-get remove modemmanager -y
+sudo apt install gstreamer1.0-plugins-bad gstreamer1.0-libav gstreamer1.0-gl -y
+sudo apt install libfuse2 -y
+sudo apt install libxcb-xinerama0 libxkbcommon-x11-0 libxcb-cursor0 -y
+```
+- Install the image [QGC](https://d176tv9ibo4jno.cloudfront.net/latest/QGroundControl.AppImage)
+- give a permission to the file and run it:
+```sh
+chmod +x ./QGroundControl.AppImage
+./QGroundControl.AppImage
+```
+### Cesium with Google Maps API Installation
+- Go to this link and install the [Cesium v2.5](https://github.com/CesiumGS/cesium-unreal/releases/download/v2.5.0/CesiumForUnreal-52-v2.5.0.zip) 
+- Please follow the [tutorials](https://cesium.com/learn/unreal/unreal-quickstart/) provided from cesium and watch this [youtube tutorial](https://www.youtube.com/watch?v=TbHCvAo-aGg) to oppen a Google Maps account and connect it.
+
+### MAVLink, D-Flight and Spline Installation.
+- MAVlink will be aoutomatically installed during the PX4 installation
+- D-Flight there is no installation of the D-flight for our project we will just open the D-Flight App and take take the necessary informations manually.
+- Spline is a Unreal Engine tool
+
+## Integrations of The Tools
+
+
+
+
+ 
+
+
+
+
 
 
 
