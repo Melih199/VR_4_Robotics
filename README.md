@@ -165,7 +165,6 @@ chmod +x ./QGroundControl.AppImage
 ```
 ### Cesium with Google Maps API Installation
 - Go to this link and install the [Cesium v2.5](https://github.com/CesiumGS/cesium-unreal/releases/download/v2.5.0/CesiumForUnreal-52-v2.5.0.zip) 
-- Please follow the [tutorials](https://cesium.com/learn/unreal/unreal-quickstart/) provided from cesium and watch this [youtube tutorial](https://www.youtube.com/watch?v=TbHCvAo-aGg) to oppen a Google Maps account and connect it.
 
 ### MAVLink, D-Flight and Spline Installation.
 - MAVlink will be aoutomatically installed during the PX4 installation
@@ -173,6 +172,32 @@ chmod +x ./QGroundControl.AppImage
 - Spline is a Unreal Engine tool
 
 ## Integrations of The Tools
+
+### Unreal Engine 5.2.0, Cesium with Google Maps API and Colesseum
+- It is better to use Blocks environment created by Colesseum (Colesseum will be already integrated)
+- Run the Unreal Engine and oppen the Colosseum/Unreal/Environments/Blocks/Blocks.uproject in Unreal Engine.
+- Delete everything in the project except PlayerStart and close it.
+- Go to CesiumForUnreal-52-v2.5.0 folder and coppy the CesiumForUnreal folder
+- Paste it to the Colosseum/Unreal/Environments/Blocks/Plugins, also you should see the Airsim pluging.
+- Run the Unreal Engine and oppen the Colosseum/Unreal/Environments/Blocks/Blocks.uproject in Unreal Engine.
+- Please follow the [tutorials](https://cesium.com/learn/unreal/unreal-quickstart/) provided from cesium and watch this [youtube tutorial](https://www.youtube.com/watch?v=TbHCvAo-aGg) to oppen a Google Maps account and connect it.
+- For the GeoReference Origin please use the followings for now:
+```sh
+Latitude: 44.4364209
+Longitude: 8.9320742
+```
+
+### Colesseum, PX4 and QGrounControl
+- Navigate to your Documents/Airsim folder and oppen the settings.json file.
+- Change this file with provided settings.json file in this repository.
+- The changes in this file allow us to connect Colesseum, PX4 and QGControl via MAVlink.
+- Alse settings.json file has necessary sensors for drone, we will use them to create navigation algorithms.
+
+### ROS, D-Flight and Colesseum
+
+
+
+
 
 
 
