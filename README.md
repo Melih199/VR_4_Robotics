@@ -189,13 +189,72 @@ Longitude: 8.9320742
 
 ### Colesseum, PX4 and QGrounControl
 - Navigate to your Documents/Airsim folder and oppen the settings.json file.
-- Change this file with provided settings.json file in this repository.
+- Change this file with provided [settings.json](./settings.json) file in this repository.
 - The changes in this file allow us to connect Colesseum, PX4 and QGControl via MAVlink.
 - Alse settings.json file has necessary sensors for drone, we will use them to create navigation algorithms.
 
 ### ROS, D-Flight and Colesseum
 - To mimic the D-Flight app we created the simple Ros node [d-flight.py](./d-flight.py)
+- Coppy this node and place it to Colosseum/ros/src/airsim_tutorial_pkgs/scripts folder
+- Then navigate to ros folder and build it:
+```sh
+catkin build; # or catkin_make
+source devel/setup.bash
+```
+- If we lanch and run following commands, this will integrate ROS, D-Flight and Colesseum:
+```sh
+roslaunch airsim_ros_pkgs airsim_node.launch
+rosrun airsim_tutorial_pkgs d-flight.py
+```
+To viualize the sensors you may wanna run rviz
 
+## How to Use Bug2 Algorithm to Avoid Obstacles
+The UAV, or drone, is controlled using a combination of PX4 flight control software and QGroundControl. This enables operators to efficiently plan and manage drone missions. However, QGroundControl lacks obstacle avoidance functionality. To address this limitation, we combined QGroundControl with [Bug2](./bug2.py) algorithm to handle such situations. To detect objects in the environment, we employed four different distance sensors positioned at 0 degrees, 90 degrees, 180 degrees, and 360 degrees. We used a preferred direction to compute the Bug2 algorithm, which is implemented by selecting the optimal direction that avoids collisions within the preferred path. These sensor can be find in the settings.json file.
+
+- To run this file before command these:
+```sh
+pip install msgpack-rpc-python
+pip install airsim
+```
+- Then to run it:
+```sh
+chmod +x bug2.py
+python //or pyhon3 bug2.py
+```
+## How to Run the Full Project
+
+- Run the Unreal Engine 5.2.0
+```sh
+cd UnrealEngine-5.2.0-release/Engine/Binaries/Linux
+./UnrealEditor
+```
+- Open the Colosseum/Unreal/Environments/Blocks/Blocks.uproject
+- Run PX4
+```sh
+cd PX4-Autopilot/Tools/setup
+make px4_sitl none_iris
+```
+- Run QGroundControl
+```sh
+./QGroundControl.AppImage
+```
+- Create Mission in QGroundControl app
+- Run the simulation and you need to wait little bit
+- Run bug2 algorithm
+```sh
+python //or pyhon3 bug2.py
+```
+- Run D-flight node to mimic D-fligh app and run rviz to visualize the sensors
+```sh
+roslaunch airsim_ros_pkgs airsim_node.launch
+rosrun airsim_tutorial_pkgs d-flight.py
+rviz
+```
+- Open the QGroundControl agin, upload the plan file to the drone and start the mission.
+
+- WELL DONE!!
+
+[![Project video]()](https://www.youtube.com/watch?v=VRSgiM8ewTc)
 
 
 
