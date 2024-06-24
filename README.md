@@ -189,8 +189,8 @@ Latitude: 44.4364209
 Longitude: 8.9320742
 ```
 <p float="left">
-  <img src="Resources/cesium_1.png" width="450" height="350" />
-  <img src="Resources/cesium_3.png" width="450" height="350" /> 
+  <img src="Resources/cesium_1.png" width="400" height="350" />
+  <img src="Resources/cesium_3.png" width="400" height="350" /> 
 </p>
 
 ### Colesseum, PX4 and QGrounControl
@@ -215,8 +215,8 @@ rosrun airsim_tutorial_pkgs d-flight.py
 To viualize the sensors you may wanna run rviz
 
 <p float="left">
-  <img src="Resources/D-Flight.jpg" width="450" height="350" />
-  <img src="Resources/Dflight_areas.png" width="450" height="350" /> 
+  <img src="Resources/D-Flight.jpg" width="400" height="350" />
+  <img src="Resources/Dflight_areas.png" width="400" height="350" /> 
 </p>
 
 ## How to Use Bug2 Algorithm to Avoid Obstacles
