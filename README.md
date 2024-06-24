@@ -5,8 +5,10 @@ This project is developed by:
 3. *Natnael Berhanu Takele - s5446838*
 
 ## Note: 
-- This project developed and tested computer with RTX 2060 graphic card and on ubuntu 20.04. With few more changes it is possible to run it on ubuntu 22.04 this will be disscussed at the and of this report. 
+- This project developed and tested computer with RTX 2060 graphic card 
+- On ubuntu 20.04
 - ROS Noetic
+- With few more changes it is possible to run it on ubuntu 22.04. 
 
 ## Aim of The Project
 This project aims to simulate an emergency medical response scenario in the challenging terrain of Righi,
@@ -253,7 +255,7 @@ rviz
 - Open the QGroundControl agin, upload the plan file to the drone and start the mission.
 
 - WELL DONE!!
-
+- You can watch the video of the project below.
 [![Project video](https://github.com/Melih199/VR_4_Robotics/assets/58879182/5b2c95f0-ff8e-4a8a-8dcd-cfb5abb3b263)](https://www.youtube.com/watch?v=VRSgiM8ewTc)
 
 
