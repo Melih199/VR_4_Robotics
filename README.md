@@ -194,6 +194,7 @@ Longitude: 8.9320742
 - Alse settings.json file has necessary sensors for drone, we will use them to create navigation algorithms.
 
 ### ROS, D-Flight and Colesseum
+- To mimic the D-Flight app we created the simple Ros node [d-flight.py](./d-flight.py)
 
 
 
