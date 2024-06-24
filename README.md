@@ -189,8 +189,8 @@ Latitude: 44.4364209
 Longitude: 8.9320742
 ```
 <p float="left">
-  <img src="Resources/cesium_1.png" width="400" hight="300" />
-  <img src="Resources/cesium_3.png" width="400" hight="300" /> 
+  <img src="Resources/cesium_1.png" width="400" hight="400" />
+  <img src="Resources/cesium_3.png" width="400" hight="400" /> 
 </p>
 
 ### Colesseum, PX4 and QGrounControl
